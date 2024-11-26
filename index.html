@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Staff Portal - Mentors Outreach</title>
+    <meta name="title" content="Staff Portal - Mentors Outreach">
+    <meta name="description" content="Access all your productivity tools, resources, and community management features in one place. Mentors Outreach Staff Portal helps you stay organized and efficient.">
+    <meta name="keywords" content="mentors outreach, staff portal, productivity tools, community management, mentorship, education">
+    <meta name="author" content="Mentors Outreach">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://staff.mentorsoutreach.org/">
+    <meta property="og:title" content="Staff Portal - Mentors Outreach">
+    <meta property="og:description" content="Access all your productivity tools, resources, and community management features in one place. Mentors Outreach Staff Portal helps you stay organized and efficient.">
+    <meta property="og:image" content="https://mentorsoutreach.org/images/social-share.png">
+    <meta property="og:site_name" content="Mentors Outreach">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://staff.mentorsoutreach.org/">
+    <meta property="twitter:title" content="Staff Portal - Mentors Outreach">
+    <meta property="twitter:description" content="Access all your productivity tools, resources, and community management features in one place. Mentors Outreach Staff Portal helps you stay organized and efficient.">
+    <meta property="twitter:image" content="https://mentorsoutreach.org/images/social-share.png">
+
+    <!-- Mobile App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MO Staff Portal">
+    <meta name="application-name" content="MO Staff Portal">
+    <meta name="theme-color" content="#094183">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/mentors_outreach_ic_launcher.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/mentors_outreach_ic_launcher.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/mentors_outreach_ic_launcher.png">
+    <link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://staff.mentorsoutreach.org/">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://mentorsoutreach.org">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Mentors Outreach Staff Portal",
+        "description": "Access all your productivity tools, resources, and community management features in one place. Mentors Outreach Staff Portal helps you stay organized and efficient.",
+        "url": "https://staff.mentorsoutreach.org",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "Mentors Outreach",
+            "url": "https://mentorsoutreach.org"
+        }
+    }
+    </script>
+
+    <!-- Add these to your head section -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:; frame-src 'self' https:;">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2563eb',    /* Modern blue */
+              secondary: '#1e40af',  /* Darker blue */
+              accent: '#3b82f6',     /* Light blue */
+              background: '#f8fafc', /* Light gray background */
+              textColor: '#1e293b',  /* Dark slate */
+              success: '#22c55e',    /* Green */
+              warning: '#eab308',    /* Yellow */
+              error: '#ef4444',      /* Red */
+            },
+            boxShadow: {
+              'card': '0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)',
+            },
+            height: {
+              'nav': '64px',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="sticky top-0 w-full bg-white shadow-card z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-nav">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <img src="https://mentorsoutreach.org/images/mentors_outreach_darkblue.png" 
+                             alt="Mentors Outreach" 
+                             class="h-8 w-auto">
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2 rounded-md text-primary hover:text-secondary focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Desktop/Mobile menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" 
+                               class="w-64 px-4 py-2 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+                               placeholder="Search portal...">
+                    </div>
+                    
+                    <div class="flex items-center space-x-3">
+                        <a href="http://social.mentorsoutreach.org/" 
+                           class="px-4 py-2 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all">
+                            Login
+                        </a>
+                        <a href="https://social.mentorsoutreach.org/checkout/professional" 
+                           class="px-4 py-2 rounded-lg bg-primary text-white hover:bg-secondary transition-all">
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add this after the nav and before the existing banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <i class="fas fa-info-circle"></i>
+                <span>Find your perfect mentor or mentee in our monthly series. Share your expertise, seek guidance, and build valuable connections.</span>
+            </div>
+            <div class="banner-actions">
+                <a href="https://social.mentorsoutreach.org/c/general-advice/introducing-mentor-matching-september-2024" target="_blank" rel="nofollow noopener" class="banner-link">Learn More</a>
+                <button class="banner-close" aria-label="Close banner">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Replace the existing header section -->
+    <header class="portal-header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Staff Portal</h1>
+                <p>Welcome to Mentors Outreach Staff Hub</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Replace the existing announcements section with this -->
+       <br> <section class="announcements">
+            <div class="section-header">
+                <h2><i class="fas fa-bullhorn"></i> Latest Updates</h2>
+                <a href="https://mentorsoutreach.org/blog/" target="_blank" rel="nofollow noopener" class="view-all-btn">
+                    <span>View All</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="announcement-slider">
+                <!-- The announcement card will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Add this after the announcements section -->
+        <section class="community-stats">
+            <h2><i class="fas fa-chart-bar"></i> Community Impact</h2>
+            <div class="stats-cards">
+                <div class="stat-card highlight">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">2,661</span>
+                        <span class="stat-label">Total Members</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-globe"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">48</span>
+                        <span class="stat-label">Countries Reached</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-handshake"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">1,287</span>
+                        <span class="stat-label">Mentorship Connections</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book-open"></i>  <!-- Changed icon to better represent a library -->
+                    <div class="stat-info">
+                        <span class="stat-number">156</span>
+                        <span class="stat-label">Resource Library</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="section-header">
+                <h2><i class="fas fa-bolt"></i> Quick Links</h2>
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="community">Community</button>
+                    <button class="category-btn" data-category="platform">Platform</button>
+                    <button class="category-btn" data-category="management">Management</button>
+                    <button class="category-btn" data-category="tools">Tools</button>
+                </div>
+            </div>
+            <div class="links-grid">
+                <!-- Community Management -->
+                <a href="https://social.mentorsoutreach.org/audience/manage" class="link-card" data-category="community" target="_blank" rel="nofollow noopener">
+                    <div class="card-badge">New</div>
+                    <i class="fas fa-user-gear"></i>
+                    <span>Manage Audience</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/settings/emails/broadcast" class="link-card" data-category="community" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Marketing</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/posts" class="link-card" data-category="community" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-comments"></i>
+                    <span>Posts</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/spaces" class="link-card" data-category="community" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-layer-group"></i>
+                    <span>Spaces</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/moderation" class="link-card" data-category="community" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Moderation</span>
+                </a>
+                
+                <!-- Platform Features -->
+                <a href="https://social.mentorsoutreach.org/live_streams" class="link-card" data-category="platform" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-video"></i>
+                    <span>Live</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/courses" class="link-card" data-category="platform" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Courses</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/events" class="link-card" data-category="platform" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Events</span>
+                </a>
+                
+                <!-- Management Tools -->
+                <a href="https://social.mentorsoutreach.org/workflows" class="link-card" data-category="management" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Workflows</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/paywalls" class="link-card" data-category="management" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-lock"></i>
+                    <span>Paywalls</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/analytics" class="link-card" data-category="management" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/settings" class="link-card" data-category="management" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+
+                <!-- Essential Tools -->
+                <a href="https://www.icloud.com/mail" class="link-card" data-category="tools" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://drive.google.com/drive/u/7/home" class="link-card" data-category="tools" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </a>
+                <a href="#" class="link-card" data-category="tools" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-clock"></i>
+                    <span>Time Sheet</span>
+                </a>
+                <a href="https://social.mentorsoutreach.org/c/resource-library/" class="link-card" data-category="tools" target="_blank" rel="nofollow noopener">
+                    <i class="fas fa-book"></i>
+                    <span>Resources</span>
+                </a>
+            </div>
+            
+            <!-- Add this pagination section -->
+            <div class="links-pagination">
+                <span class="page-info">Showing <span class="items-shown">8</span> of <span class="total-items">16</span></span>
+                <div class="pagination-controls">
+                    <button class="pagination-btn prev-page" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="pagination-btn next-page">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update the Services & Support section with actual content -->
+        <section class="services-support">
+            <h2 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">
+                <i class="fas fa-book-reader"></i>
+                Resource Library
+            </h2>
+            <div class="accordion">
+                <!-- Career Planning -->
+                <div class="accordion-item">
+                    <button class="accordion-header w-full flex justify-between items-center p-4 bg-background rounded-lg hover:bg-gray-100 transition-all">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-briefcase text-primary"></i>
+                            Career Planning
+                        </span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="accordion-content hidden p-4">
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://mentorsoutreach.org/resource-library/career-planning/" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-file-alt"></i>
+                                    Resources focused on career planning
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://untools.co/" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-brain"></i>
+                                    Tools for better thinking
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Time Management -->
+                <div class="accordion-item mt-3">
+                    <button class="accordion-header w-full flex justify-between items-center p-4 bg-background rounded-lg hover:bg-gray-100 transition-all">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-clock text-success"></i>
+                            Time Management
+                        </span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="accordion-content hidden p-4">
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://mentorsoutreach.org/resource-library/" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-tasks"></i>
+                                    Manage your time more efficiently
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Professional Development -->
+                <div class="accordion-item mt-3">
+                    <button class="accordion-header w-full flex justify-between items-center p-4 bg-background rounded-lg hover:bg-gray-100 transition-all">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-user-graduate text-success"></i>
+                            Professional Development
+                        </span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="accordion-content hidden p-4">
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://mentorsoutreach.org/resource-library/build-a-professional-connection-by-sharing-an-article/" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-users"></i>
+                                    Build a professional connection
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://mentorsoutreach.org/resource-library/find-your-purpose-to-build-the-network-you-actually-want/" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-lightbulb"></i>
+                                    Find your purpose
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Books & Resources -->
+                <div class="accordion-item mt-3">
+                    <button class="accordion-header w-full flex justify-between items-center p-4 bg-background rounded-lg hover:bg-gray-100 transition-all">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-book text-warning"></i>
+                            Books & Resources
+                        </span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="accordion-content hidden p-4">
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="https://www.amazon.com/Go-Giver-Little-Story-Powerful-Business/dp/1469063832" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-book"></i>
+                                    The go-giver: a little story about a powerful business idea
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.amazon.com/exec/obidos/ASIN/081299339X/wnycorg-20/" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-book"></i>
+                                    Smarter Faster Better: The Secrets of Being Productive
+                                </a>
+                            </li>
+                            <li></li>
+                                <a href="https://www.amazon.com/dp/0062273205/ref=cm_sw_r_cp_ep_dp_YjKczbKASWMWE" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-book"></i>
+                                    The Hard Thing About Hard Things
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.amazon.com/Commit-Make-Stronger-Unlock-Potential-ebook/dp/B01ISFAU2G/ref=sr_1_1?ie=UTF8&qid=1488396951&sr=8-1&keywords=enda+mcnulty+commit" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-book"></i>
+                                    Commit!: make your mind and body stronger
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="productivity-tools">
+            <div class="section-header">
+                <h2><i class="fas fa-toolbox"></i> Productivity Tools</h2>
+                <div class="tools-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="communication">Communication</button>
+                    <button class="filter-btn" data-filter="productivity">Productivity</button>
+                </div>
+            </div>
+            <div class="tools-grid-container">
+                <div class="tools-grid active">
+                    <!-- Featured Tools -->
+                    <a href="https://workspace.google.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="featured,productivity">
+                        <i class="fab fa-google"></i>
+                        <span>Google Workspace</span>
+                    </a>
+                    <a href="https://www.office.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="featured,productivity">
+                        <i class="fab fa-microsoft"></i>
+                        <span>Office 365</span>
+                    </a>
+                    
+                    <!-- Communication Tools -->
+                    <a href="https://slack.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="communication">
+                        <i class="fab fa-slack"></i>
+                        <span>Slack</span>
+                    </a>
+                    <a href="https://zoom.us" target="_blank" rel="nofollow noopener" class="tool-card" data-category="communication">
+                        <i class="fas fa-video"></i>
+                        <span>Zoom</span>
+                    </a>
+                    <a href="https://discord.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="communication">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://teams.microsoft.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="communication">
+                        <i class="fas fa-users"></i>
+                        <span>Microsoft Teams</span>
+                    </a>
+                    
+                    <!-- Productivity Tools -->
+                    <a href="https://www.notion.so" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-book"></i>
+                        <span>Notion</span>
+                    </a>
+                    <a href="https://trello.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fab fa-trello"></i>
+                        <span>Trello</span>
+                    </a>
+                    <a href="https://asana.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-tasks"></i>
+                        <span>Asana</span>
+                    </a>
+                    <a href="https://monday.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Monday.com</span>
+                    </a>
+                    <a href="https://www.atlassian.com/software/jira" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fab fa-jira"></i>
+                        <span>Jira</span>
+                    </a>
+                    <a href="https://evernote.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-sticky-note"></i>
+                        <span>Evernote</span>
+                    </a>
+                    
+                    <!-- AI & Automation Tools -->
+                    <a href="https://chat.openai.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="featured,productivity">
+                        <i class="fas fa-robot"></i>
+                        <span>ChatGPT</span>
+                    </a>
+                    <a href="https://zapier.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-bolt"></i>
+                        <span>Zapier</span>
+                    </a>
+                    <a href="https://www.grammarly.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-spell-check"></i>
+                        <span>Grammarly</span>
+                    </a>
+                    
+                    <!-- Calendar & Scheduling -->
+                    <a href="https://calendar.google.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-calendar"></i>
+                        <span>Google Calendar</span>
+                    </a>
+                    <a href="https://calendly.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Calendly</span>
+                    </a>
+                    
+                    <!-- Cloud Storage -->
+                    <a href="https://dropbox.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fab fa-dropbox"></i>
+                        <span>Dropbox</span>
+                    </a>
+                    <a href="https://drive.google.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fab fa-google-drive"></i>
+                        <span>Google Drive</span>
+                    </a>
+                    
+                    <!-- Design Tools -->
+                    <a href="https://www.figma.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </a>
+                    <a href="https://www.canva.com" target="_blank" rel="nofollow noopener" class="tool-card" data-category="productivity">
+                        <i class="fas fa-palette"></i>
+                        <span>Canva</span>
+                    </a>
+                </div>
+                <div class="tools-pagination">
+                    <span class="page-info">Showing <span id="itemsShown">8</span> of <span id="totalItems">8</span></span>
+                    <div class="pagination-controls">
+                        <button class="pagination-btn" id="prevPage" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="pagination-btn" id="nextPage" disabled>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="portal-footer bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Contact Support</h3>
+                    <div class="space-y-2">
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:support@mentorsoutreach.org">support@mentorsoutreach.org</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>l2/155 Queen St, Brisbane City QLD 4000 </span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Quick Help</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://social.mentorsoutreach.org/c/getting-started/" class="hover:text-primary transition-colors">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="https://social.mentorsoutreach.org/c/getting-started/" class="hover:text-primary transition-colors">User Guide</a>
+                        </li>
+                        <li>
+                            <a href="https://social.mentorsoutreach.org/c/getting-started/community-guidelines" class="hover:text-primary transition-colors">Report Issue</a>
+                        </li>
+                        <li>
+                            <a href="https://social.mentorsoutreach.org/c/getting-started/new-here-please-read-me-first" class="hover:text-primary transition-colors">Support Ticket</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="social-links flex gap-4">
+                        <a href="https://www.linkedin.com/company/mentorsoutreach" class="text-2xl hover:text-primary transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mentorsoutreach" class="text-2xl hover:text-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mentorsoutreach" class="text-2xl hover:text-primary transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/mentorsoutreach" class="text-2xl hover:text-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm opacity-75">Stay updated with our latest news and updates</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-sm opacity-75">&copy; 2024 Mentors Outreach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick Actions Menu -->
+    <div class="quick-actions" id="quickActions">
+        <button class="quick-actions-trigger fixed bottom-6 right-6 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-secondary transition-all" aria-label="Quick actions">
+            <i class="fas fa-bolt text-xl"></i>
+        </button>
+        <div class="quick-actions-menu fixed bottom-24 right-6 w-80 bg-white rounded-xl shadow-xl border border-gray-200">
+            <div class="p-4 border-b border-gray-200">
+                <input type="text" 
+                       id="quickActionSearch" 
+                       class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20" 
+                       placeholder="Type a command...">
+            </div>
+            <div class="quick-actions-list max-h-96 overflow-y-auto">
+                <!-- Search -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="search">
+                    <i class="fas fa-search text-primary"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Global Search</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+K</kbd>
+                    </div>
+                </button>
+
+                <!-- Notifications -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="notifications">
+                    <i class="fas fa-bell text-warning"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Notifications</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+N</kbd>
+                    </div>
+                </button>
+
+                <!-- Create Post -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="create-post">
+                    <i class="fas fa-pen-to-square text-success"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Create Post</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+P</kbd>
+                    </div>
+                </button>
+
+                <!-- Messages -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="messages">
+                    <i class="fas fa-envelope text-accent"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Messages</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+M</kbd>
+                    </div>
+                </button>
+
+                <!-- Calendar -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="calendar">
+                    <i class="fas fa-calendar text-primary"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Calendar</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+E</kbd>
+                    </div>
+                </button>
+
+                <!-- Tasks -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="tasks">
+                    <i class="fas fa-tasks text-secondary"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>My Tasks</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+T</kbd>
+                    </div>
+                </button>
+
+                <!-- Settings -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="settings">
+                    <i class="fas fa-cog text-gray-600"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Settings</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+,</kbd>
+                    </div>
+                </button>
+
+                <!-- Help Center -->
+                <button class="quick-action w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50" data-action="help">
+                    <i class="fas fa-question-circle text-primary"></i>
+                    <div class="flex justify-between items-center w-full">
+                        <span>Help Center</span>
+                        <kbd class="px-2 py-1 bg-gray-100 rounded text-sm">Ctrl+H</kbd>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
